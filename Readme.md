@@ -8,7 +8,7 @@ This project was created using NetBeans 11.3. To get started, `git clone` or dow
 
 Project Structure
 =================
-The source code is divided into 3 packages, namely, `client`, `gui`, and `mediator`. The `gui` package contains the code to create chat windows. The `mediator` package contains all the necessary classes and interfaces with code given except for `Publisher.java`, where you are expected to put your code in. The `client` package contains `Main.java`, which shows how to instantiate the chat window and initiate activities like join-channel, leave-channel, and send-message in code. All those activities can be similarly done through GUI too. Also it contains a simple `SpyingPublisher` class to demonstrate how to a write a simple publisher/mediator. The `SpyingPublisher` only dumps onto the console activities triggered by chat windows. You can use the code as a starting point to help you kickstart. You can remove the class after that.
+The source code is divided into 3 packages, namely, `client`, `gui`, and `mediator`. The `gui` package contains the code to create chat windows. The `mediator` package contains all the necessary classes and interfaces with code given except for `Publisher.java`, where you are expected to put your code in. The `client` package contains `Main.java`, which shows how to instantiate the chat window and initiate activities like _join-channel_, _leave-channel_, and _send-message_ in code. All those activities can be similarly done through GUI too. Also it contains a simple `SpyingPublisher` class to demonstrate how to a write a simple publisher/mediator. The `SpyingPublisher` only dumps onto the console activities triggered by chat windows. You can use the code as a starting point to help you kickstart. You can remove the class after that.
 
 ChatFrame GUI
 =============
@@ -23,6 +23,11 @@ You can join/create channel by clicking on `Channel->Open Channel` in the GUI me
 ```java
 matt.createChannel("My chat group");
 ```
+To send a message, type the message in the text field box next to `Send` button, then press `Enter` key to send or click on the `Send` button. You can do the same in code as follow:
+```java
+matt.sendMessage("I know how to design using the Mediator design pattern!!!", "My chat group");
+```
+Watch the output console for the information dumped by the `SpyingPublisher` when _join-channel_, _leave-channel_, and _send-message_ are performed.
 
 Example of a Simple Chat Program
 ================================
