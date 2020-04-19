@@ -8,7 +8,21 @@ This project was created using NetBeans 11.3. To get started, `git clone` or dow
 
 Project Structure
 =================
-The source code is divided into 3 packages, namely, `client`, `gui`, and `mediator`. The `gui` package contains the code to create chat windows. The `mediator` package contains all the necessary classes and interfaces with code given except for `Publisher.java`, where you are expected to put your code in. The `client` package contains `Main.java`, which shows how to instantiate the chat window and initiate activities like join-channel, leave-channel, and send-message in code. All those activities can be similarly done through GUI too. Also it contains a simple `SpyingPublisher` class to demonstrate how to a write a simple publisher/mediator. The `SpyingPublisher` only dumps onto the console activities triggered by chat windows. You can use the code as a starting point to help you kickstart. You can remove the class after that.    
+The source code is divided into 3 packages, namely, `client`, `gui`, and `mediator`. The `gui` package contains the code to create chat windows. The `mediator` package contains all the necessary classes and interfaces with code given except for `Publisher.java`, where you are expected to put your code in. The `client` package contains `Main.java`, which shows how to instantiate the chat window and initiate activities like join-channel, leave-channel, and send-message in code. All those activities can be similarly done through GUI too. Also it contains a simple `SpyingPublisher` class to demonstrate how to a write a simple publisher/mediator. The `SpyingPublisher` only dumps onto the console activities triggered by chat windows. You can use the code as a starting point to help you kickstart. You can remove the class after that.
+
+ChatFrame GUI
+=============
+To create and display a ChatFrame invoke `ChatFrame.createFrame()` method as follow:
+```java
+SpyingPublisher publisher = new SpyingPublisher();
+ChatFrame matt = ChatFrame.createFrame("Matthew", publisher);
+```
+[Note: Change the `SpyingPublisher` to `Publisher` once you have completed the `Publisher.java` code]
+
+You can join/create channel by clicking on `Channel->Open Channel` in the GUI menu or hit `Ctrl-O`, then type in the channel name in the input dialog. Or you can do the same in the code as follow:
+```java
+matt.createChannel("My chat group");
+```
 
 Example of a Simple Chat Program
 ================================
