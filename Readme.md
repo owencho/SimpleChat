@@ -8,7 +8,7 @@ The source code is divided into 3 packages, namely, `client`, `gui`, and `mediat
 
 Example of a Simple Chat Program
 ================================
-The following is the output of a completed simple chat program:
+The following is the output of a completed simple chat program [note that this code is not provided]:
 
 ![Simple Chat Example](/doc/images/SimpleChat.png)
 
