@@ -1,6 +1,6 @@
 Introduction
 ============
-This is an incomplete program where it just provides the basic functionality of chat window to get you started on creating your own simple chat program. 
+This is an incomplete program where it just provides the basic functionality of chat window to get you started on creating your own simple chat program. This project was created using NetBeans 11.3.
 
 Structure
 =========
