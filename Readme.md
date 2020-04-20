@@ -28,21 +28,25 @@ Or you can do the same in the code as follow:
 ```java
 matt.createChannel("My chat group");
 ```
-If you created more than 1 ChatFrame, they would stack up on one another on the screen. You have to move the top ChatFrame away to see another ChatFrame immediately below it. ChatFrame objects can be created with the __same user name__, however they can conflict with one another and it is undesireable. So avoid re-using user name.  
+If you created more than 1 ChatFrame, they would stack up on one another on the screen. You have to move the top ChatFrame away to see another ChatFrame immediately below it. ChatFrame objects can be created with the __same user name__, however they can conflict with one another and it is undesirable. So avoid re-using user name.  
 
-To send a message, type the message in the text field box next to `Send` button, then press `Enter` key to send or click on the `Send` button. You can do the same in code as follow:
+To send a message, type the message in the text field box next to `Send` button, then press `Enter` key to send or click on the `Send` button. 
+
+![Writing a Message](/doc/images/WritingMessage.png)
+
+You can do the same in code as follow:
 ```java
 matt.sendMessage("I know how to design using the Mediator design pattern!!!", "My chat group");
 ```
 Watch the output console for the information dumped by the `SpyingPublisher` when _join-channel_, _leave-channel_, and _send-message_ are performed.
 
-![Simple Chat Example](/doc/images/OutputFromSpyingPublisher.png)
+![Output Given by SpyingPublisher](/doc/images/OutputFromSpyingPublisher.png)
 
 UML Class Diagram
 =================
 The UML class diagram below depicts the relationships among the classes and interfaces of the SimpleChat program (I used free web-tool found [here](https://app.diagrams.net/) to sketch).
 
-![Simple Chat Example](/doc/images/SimpleChatUMLClassDiagram.svg)
+![Simple Chat UML Class Diagram](/doc/images/SimpleChatUMLClassDiagram.svg)
 
 Example of a Simple Chat Program
 ================================
