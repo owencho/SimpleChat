@@ -38,7 +38,7 @@ You can do the same in code as follow:
 ```java
 matt.sendMessage("I know how to design using the Mediator design pattern!!!", "My chat group");
 ```
-Click on the `x` box next to the channel tab to close it. You can do the same by clicking on `Channel->Close Channel` in the GUI menu or hit `Ctrl-C`.
+Click on the `x` box next to the channel tab to close it. You can do the same by clicking on `Channel->Delete Channel` in the GUI menu or hit `Ctrl-D`.
 
 ![Closing a Channel](/doc/images/ClosingChannel.png)
 

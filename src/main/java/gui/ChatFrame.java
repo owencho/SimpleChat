@@ -152,7 +152,7 @@ public class ChatFrame extends JFrame implements Observer<ChatData> {
         menuBar = new javax.swing.JMenuBar();
         channelMenu = new javax.swing.JMenu();
         menuOpenChannel = new javax.swing.JMenuItem();
-        menuCloseChannel = new javax.swing.JMenuItem();
+        menuDeleteChannel = new javax.swing.JMenuItem();
         editMenu = new javax.swing.JMenu();
         menuClear = new javax.swing.JMenuItem();
 
@@ -231,14 +231,14 @@ public class ChatFrame extends JFrame implements Observer<ChatData> {
         });
         channelMenu.add(menuOpenChannel);
 
-        menuCloseChannel.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_MASK));
-        menuCloseChannel.setText("Delete Channel");
-        menuCloseChannel.addActionListener(new java.awt.event.ActionListener() {
+        menuDeleteChannel.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_MASK));
+        menuDeleteChannel.setText("Delete Channel");
+        menuDeleteChannel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuCloseChannelActionPerformed(evt);
+                menuDeleteChannelActionPerformed(evt);
             }
         });
-        channelMenu.add(menuCloseChannel);
+        channelMenu.add(menuDeleteChannel);
 
         menuBar.add(channelMenu);
 
@@ -281,13 +281,13 @@ public class ChatFrame extends JFrame implements Observer<ChatData> {
         createChannel(channelName);
     }//GEN-LAST:event_menuOpenChannelActionPerformed
 
-    private void menuCloseChannelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCloseChannelActionPerformed
+    private void menuDeleteChannelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDeleteChannelActionPerformed
         String channelName;        
         channelName = (String)JOptionPane.showInputDialog(null, "Channel Name", 
-                            "Close Channel", JOptionPane.PLAIN_MESSAGE, icon, 
+                            "Delete Channel", JOptionPane.PLAIN_MESSAGE, icon, 
                             null, null);        
         closeChannel(channelName);
-    }//GEN-LAST:event_menuCloseChannelActionPerformed
+    }//GEN-LAST:event_menuDeleteChannelActionPerformed
 
     private void menuClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuClearActionPerformed
         JPanel panel = (JPanel)tabbedPane.getSelectedComponent();
@@ -395,7 +395,7 @@ public class ChatFrame extends JFrame implements Observer<ChatData> {
     private javax.swing.JPanel inputPanel;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem menuClear;
-    private javax.swing.JMenuItem menuCloseChannel;
+    private javax.swing.JMenuItem menuDeleteChannel;
     private javax.swing.JMenuItem menuOpenChannel;
     private javax.swing.JTextArea messageArea;
     private javax.swing.JScrollPane scrollPane;
