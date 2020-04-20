@@ -20,7 +20,11 @@ ChatFrame matt = ChatFrame.createFrame("Matthew", publisher);
 `createFrame()` requires a _user name_ and a _publisher_. The name is needed to identify the user and should be unique. The publisher is a mediator object whose job is to coordinate the reception and dissemination of chat and system status messages.
 [Note: Change the `SpyingPublisher` to `Publisher` once you have completed the `Publisher.java` code]
 
-You can join/create channel by clicking on `Channel->Open Channel` in the GUI menu or hit `Ctrl-O`, then type in the channel name in the input dialog. Or you can do the same in the code as follow:
+You can join/create channel by clicking on `Channel->Open Channel` in the GUI menu or hit `Ctrl-O`, then type in the channel name in the input dialog. 
+
+![Open a Channel](/doc/images/OpenAChannel.png)
+
+Or you can do the same in the code as follow:
 ```java
 matt.createChannel("My chat group");
 ```
