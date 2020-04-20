@@ -40,7 +40,7 @@ Watch the output console for the information dumped by the `SpyingPublisher` whe
 
 UML Class Diagram
 =================
-The UML class diagram below depicts the relationships among the classes and interfaces of the SimpleChat program.
+The UML class diagram below depicts the relationships among the classes and interfaces of the SimpleChat program (I used free web-tool found [here](https://drawio-app.com/) to sketch).
 
 ![Simple Chat Example](/doc/images/SimpleChatUMLClassDiagram.svg)
 
