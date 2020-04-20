@@ -38,6 +38,10 @@ Watch the output console for the information dumped by the `SpyingPublisher` whe
 
 ![Simple Chat Example](/doc/images/OutputFromSpyingPublisher.png)
 
+UML Class Diagram
+=================
+![Simple Chat Example](/doc/images/SimpleChatUMLClassDiagram.svg)
+
 Example of a Simple Chat Program
 ================================
 The following is the output of a completed simple chat program [note that this code is not provided]:
