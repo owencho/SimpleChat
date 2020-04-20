@@ -12,7 +12,7 @@ The source code is divided into 3 packages, namely, `client`, `gui`, and `mediat
 
 ChatFrame GUI
 =============
-To create and display a ChatFrame invoke `ChatFrame.createFrame()` method as follow:
+To create and display a ChatFrame, invoke `ChatFrame.createFrame()` method as follow:
 ```java
 SpyingPublisher publisher = new SpyingPublisher();
 ChatFrame matt = ChatFrame.createFrame("Matthew", publisher);
@@ -35,5 +35,5 @@ The following is the output of a completed simple chat program [note that this c
 
 ![Simple Chat Example](/doc/images/SimpleChat.png)
 
-It created 3 chat windows, i.e., Matthew, Gina and Bambi, and 1 console. Matthew create/join **lounge** channel. Since he was the only participant in that channel, the mediator/publisher informed him that he was alone. Then when Gina joined the channel, she was informed that Matthew was there and Matthew was also been informed that Gina has just joined. The same thing happened when Bambi and Console joined the channel. Matthew sent a greetings and it was broadcasted to all other participants. The same thing happened when Console did the same.  
+It creates 3 chat windows, i.e., Matthew, Gina and Bambi, and 1 console. Matthew creates/joins **lounge** channel. Since he is the only participant in that channel, the mediator/publisher informs him that he is alone. Then when Gina joins the channel, she is informed that Matthew has been there and at the same time Matthew is informed that Gina has just joined. The same thing happens when Bambi and Console join the channel. Matthew sends greetings and it gets broadcasted to all other participants. The same thing happens when Console did the same.  
 
