@@ -44,7 +44,7 @@ Click on the `x` box next to the channel tab to close it. You can do the same by
 
 You can do the same in code as follow:
 ```java
-matt.closeChannel("Unwanted");
+matt.deleteChannel("Unwanted");
 ```
 Watch the output console for the information dumped by the `SpyingPublisher` when _join-channel_, _leave-channel_, and _send-message_ are performed.
 

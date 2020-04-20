@@ -35,7 +35,7 @@ public class Main {
         bambi.createChannel("public");
         matt.createChannel("public");
         // The ChatFrame can leave/close a channel by code (or by GUI)
-        matt.closeChannel("public");
+        matt.deleteChannel("public");
         // The ChatFrame can send message by code (or by GUI)
         matt.sendMessage("Hello everyone!", "lounge");
     }    

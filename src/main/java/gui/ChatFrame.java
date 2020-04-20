@@ -95,7 +95,7 @@ public class ChatFrame extends JFrame implements Observer<ChatData> {
         }
     }
     
-    public void closeChannel(String channel) {
+    public void deleteChannel(String channel) {
         int index;
         if((index = tabbedPane.indexOfTab(channel)) >= 0) {
             tabbedPane.remove(index);
@@ -286,7 +286,7 @@ public class ChatFrame extends JFrame implements Observer<ChatData> {
         channelName = (String)JOptionPane.showInputDialog(null, "Channel Name", 
                             "Delete Channel", JOptionPane.PLAIN_MESSAGE, icon, 
                             null, null);        
-        closeChannel(channelName);
+        deleteChannel(channelName);
     }//GEN-LAST:event_menuDeleteChannelActionPerformed
 
     private void menuClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuClearActionPerformed
