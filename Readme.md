@@ -38,9 +38,18 @@ You can do the same in code as follow:
 ```java
 matt.sendMessage("I know how to design using the Mediator design pattern!!!", "My chat group");
 ```
+Click on the `x` box next to the channel tab to close it. You can do the same by clicking on `Channel->Close Channel` in the GUI menu or hit `Ctrl-C`.
+
+![Closing a Channel](/doc/images/ClosingChannel.png)
+
+You can do the same in code as follow:
+```java
+matt.closeChannel("Unwanted");
+```
 Watch the output console for the information dumped by the `SpyingPublisher` when _join-channel_, _leave-channel_, and _send-message_ are performed.
 
 ![Output Given by SpyingPublisher](/doc/images/OutputFromSpyingPublisher.png)
+
 
 UML Class Diagram
 =================
