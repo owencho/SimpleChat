@@ -17,17 +17,22 @@ To create and display a ChatFrame, invoke `ChatFrame.createFrame()` method as fo
 SpyingPublisher publisher = new SpyingPublisher();
 ChatFrame matt = ChatFrame.createFrame("Matthew", publisher);
 ```
+`createFrame()` requires a _user name_ and a _publisher_. The name is needed to identify the user and should be unique. The publisher is a mediator object whose job is to coordinate the reception and dissemination of chat and system status messages.
 [Note: Change the `SpyingPublisher` to `Publisher` once you have completed the `Publisher.java` code]
 
 You can join/create channel by clicking on `Channel->Open Channel` in the GUI menu or hit `Ctrl-O`, then type in the channel name in the input dialog. Or you can do the same in the code as follow:
 ```java
 matt.createChannel("My chat group");
 ```
+If you created more than 1 ChatFrame, they would stack up on one another on the screen. You have to move the top ChatFrame away to see another ChatFrame immediately below it. ChatFrame objects can be created with the __same user name__, however they can conflict with one another and it is undesireable. So avoid re-using user name.  
+
 To send a message, type the message in the text field box next to `Send` button, then press `Enter` key to send or click on the `Send` button. You can do the same in code as follow:
 ```java
 matt.sendMessage("I know how to design using the Mediator design pattern!!!", "My chat group");
 ```
 Watch the output console for the information dumped by the `SpyingPublisher` when _join-channel_, _leave-channel_, and _send-message_ are performed.
+
+![Simple Chat Example](/doc/images/OutputFromSpyingPublisher.png)
 
 Example of a Simple Chat Program
 ================================
