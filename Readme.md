@@ -63,5 +63,5 @@ The following is the output of a completed simple chat program [note that this c
 
 ![Simple Chat Example](/doc/images/SimpleChat.png)
 
-It creates 3 chat windows, i.e., Matthew, Gina and Bambi, and 1 console. Matthew creates/joins **lounge** channel. Since he is the only participant in that channel, the mediator/publisher informs him that he is alone. Then when Gina joins the channel, she is informed that Matthew has been there and at the same time Matthew is informed that Gina has just joined. The same thing happens when Bambi and Console join the channel. Matthew sends greetings and it gets broadcasted to all other participants. The same thing happens when Console did the same.  
+It creates 3 chat windows, i.e., Matthew, Gina and Bambi, and 1 console. Matthew creates/joins **lounge** channel. Since he is the only participant in that channel, the mediator/publisher informs him that he is alone. Then when Gina joins the channel, she is informed that Matthew has been there and at the same time Matthew is informed that Gina has just joined. The same thing happens when Bambi and Console join the channel. Matthew sends greetings and it gets broadcasted to all other participants. The same thing happens when Console greets and introduces himself.  
 
