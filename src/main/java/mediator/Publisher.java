@@ -7,7 +7,7 @@ package mediator;
 
 /**
  *
- * @author Tze-Ven Poh
+ * @author Tze-Ven Po
  */
 public class Publisher implements Publishable<ChatData> {
     // Create a collection object that keeps the channel names and their
