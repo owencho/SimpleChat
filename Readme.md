@@ -2,6 +2,10 @@ Introduction
 ============
 This is an incomplete program where it just provides the basic functionality of chat window to get you started on creating your own simple chat program. In the chat window you can create/join different channels so that only interested parties can chat among themselves. A participant can leave a channel if he/she chooses to do so.
 
+Introduction
+============
+Testing ReadMe
+
 Integrated Development Environment (IDE)
 ========================================
 This project was created using NetBeans 11.3. To get started, `git clone` or download the project. Then open it under the NetBeans IDE.
